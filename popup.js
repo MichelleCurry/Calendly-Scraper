@@ -6,7 +6,7 @@ scrapeCalendly.addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({active: true, currentWindow: true})
 
     //Execute script to parse appointments on page
-    chrome.scripting.excuteScript({
+    chrome.scripting.executeScript({
         target: {tabId: tab.id},
         func: scrapeAppointmentsFromPage,
     })
@@ -14,5 +14,11 @@ scrapeCalendly.addEventListener("click", async () => {
 
 //Function to scrape appointments
 function scrapeAppointmentsFromPage() {
-    alert('hi');
+    // RegEx parses for emails from html text
+    const emailRegEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/gim;
+
+    // parse emails from html page
+    let emails = document.body.innerHTML.match()
+
+    alert(emails);
 }
