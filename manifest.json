@@ -14,7 +14,9 @@
       "16": "images/",
       "32": "images/",
       "48": "images/",
-      "128": "images/"
+      "128": "images/",
+      
+    "default_popup": "popup.html"
     }
   },
   "content_scripts": [{}]
