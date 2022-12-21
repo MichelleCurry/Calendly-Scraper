@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "CalendlyScraper",
+  "description": "Get the needed excel information from scheduled appoinments on Calendly",
+  "version": "1.0",
+  "icons": {
+    "16": "images/",
+    "32": "images/",
+    "48": "images/",
+    "128": "images/"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/",
+      "32": "images/",
+      "48": "images/",
+      "128": "images/"
+    }
+  },
+  "content_scripts": [{}]
+}
