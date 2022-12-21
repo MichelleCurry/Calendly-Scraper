@@ -15,10 +15,11 @@ scrapeCalendly.addEventListener("click", async () => {
 //Function to scrape appointments
 function scrapeAppointmentsFromPage() {
     // RegEx parses for emails from html text
-    const emailRegEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/gim;
+    const emailRegEx = /[\w\.=-]+@[\w\.-]+\.[\w]{2,3}/
+    gim;
 
     // parse emails from html page
-    let emails = document.body.innerHTML.match()
+    let emails = document.body.innerHTML.match(emailRegEx)
 
     alert(emails);
 }
